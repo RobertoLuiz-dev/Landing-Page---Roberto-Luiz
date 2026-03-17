@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" fill="none">
+  <defs>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" stroke="#7CB9D6" stroke-opacity="0.18"/>
+    </pattern>
+    <linearGradient id="fade" x1="0" y1="0" x2="1600" y2="1000" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0E1F2B" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#183F56" stop-opacity="0.12"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#fade)"/>
+  <rect width="1600" height="1000" fill="url(#grid)"/>
+
+  <g stroke="#5CA0C4" stroke-opacity="0.28" stroke-width="2">
+    <path d="M120 180H540L640 280H980"/>
+    <path d="M260 640H760L880 760H1260"/>
+    <path d="M980 120V280"/>
+    <path d="M540 180V360H380"/>
+    <path d="M1260 760V560H1420"/>
+  </g>
+
+  <g fill="#9ED4EC" fill-opacity="0.45">
+    <circle cx="120" cy="180" r="6"/>
+    <circle cx="540" cy="180" r="6"/>
+    <circle cx="640" cy="280" r="6"/>
+    <circle cx="980" cy="280" r="6"/>
+    <circle cx="760" cy="640" r="6"/>
+    <circle cx="1260" cy="760" r="6"/>
+  </g>
+</svg>

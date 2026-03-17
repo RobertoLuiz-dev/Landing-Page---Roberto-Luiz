@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio de Roberto Luiz com projetos front-end, foco em interfaces responsivas e deploy no Vercel.">
+  <meta name="theme-color" content="#111827">
+  <title>Roberto Luiz | Front-end Portfolio</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+
+  <!-- Open Graph — Facebook · LinkedIn · WhatsApp · Discord -->
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://portfolio-roberto-luiz.vercel.app/">
+  <meta property="og:title"       content="Roberto Luiz | Front-end Portfolio">
+  <meta property="og:description" content="Landing page pessoal com projetos, processo de trabalho e contatos.">
+  <meta property="og:image"       content="https://portfolio-roberto-luiz.vercel.app/assets/og-card.png">
+  <meta property="og:image:width"  content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale"      content="pt_BR">
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Roberto Luiz | Front-end Portfolio">
+  <meta name="twitter:description" content="Landing page pessoal com projetos, processo de trabalho e contatos.">
+  <meta name="twitter:image"       content="https://portfolio-roberto-luiz.vercel.app/assets/og-card.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container topbar">
+      <a class="brand" href="#hero">Roberto Luiz</a>
+      <nav class="nav">
+        <a href="#projects">Projetos</a>
+        <a href="#about">Sobre</a>
+        <a href="#contact">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal" style="--delay: 0s;">
+          <p class="eyebrow">Front-end em evolucao constante</p>
+          <h1>Eu transformo estudos e projetos proprios em paginas claras, responsivas e prontas para publicacao.</h1>
+          <p class="lead">Sou Roberto Luiz. Estou consolidando meu portfolio com projetos selecionados, refatoracao visual e deploy no Vercel para aumentar minha presenca profissional online.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">Ver projetos</a>
+            <a class="button button-secondary" href="https://www.linkedin.com/in/roberto-luiz-0a2774110/" target="_blank" rel="noopener noreferrer">Abrir LinkedIn</a>
+          </div>
+          <ul class="hero-metrics" aria-label="Destaques do portfolio">
+            <li><strong>3+</strong><span>projetos em fase de polimento</span></li>
+            <li><strong>100%</strong><span>foco em layout responsivo</span></li>
+            <li><strong>Vercel</strong><span>como stack inicial de deploy</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-card reveal" style="--delay: .08s;">
+          <p class="card-label">Foco atual</p>
+          <div class="card-stack">
+            <article>
+              <span>01</span>
+              <h2>Curadoria dos melhores projetos</h2>
+              <p>Selecionar o que realmente sustenta uma boa demonstracao tecnica.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h2>Deploy e narrativa profissional</h2>
+              <p>Publicar projetos no Vercel e reorganizar a divulgacao com um link central.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h2>Posicionamento para entrevistas</h2>
+              <p>Apresentar melhor repertorio visual, clareza de codigo e consistencia de entregas.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head reveal" style="--delay: 0s;">
+          <p class="eyebrow">Projetos em destaque</p>
+          <h2>Uma base inicial de portfolio que comunica direcao, criterio e capacidade de execucao.</h2>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card reveal" style="--delay: .05s;">
+            <p class="project-tag">HTML + CSS</p>
+            <h3>Blog dos Gatos</h3>
+            <p>Projeto editorial estatico reformulado para apresentar hierarquia visual melhor, cards refinados e preparo para deploy.</p>
+            <div class="project-links">
+              <span>Em refinamento</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal" style="--delay: .12s;">
+            <p class="project-tag">Portfolio</p>
+            <h3>Landing pessoal</h3>
+            <p>Projeto central da sua divulgacao: uma pagina unica para reunir bio, projetos, links e CTA para recrutadores.</p>
+            <div class="project-links">
+              <span>Em construcao</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal" style="--delay: .19s;">
+            <p class="project-tag">Proximos deploys</p>
+            <h3>Outros cases selecionados</h3>
+            <p>Espaco reservado para os proximos projetos que voce decidir publicar depois da revisao visual e tecnica.</p>
+            <div class="project-links">
+              <span>Curadoria em andamento</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-contrast" id="about">
+      <div class="container about-grid">
+        <div class="about-copy reveal" style="--delay: 0s;">
+          <p class="eyebrow">Sobre mim</p>
+          <h2>Estou construindo um portfolio mais estrategico para que bons estudos tambem virem boas oportunidades.</h2>
+          <p>Meu foco agora e revisar projetos que ja existem, elevar o padrao visual, organizar melhor a apresentacao e publicar tudo de um jeito profissional. A meta nao e apenas mostrar codigo, mas mostrar criterio.</p>
+          <p>Procuro oportunidades em que eu possa crescer com consistencia, contribuir com interfaces bem executadas e continuar amadurecendo minha base tecnica.</p>
+        </div>
+
+        <div class="about-panel reveal" style="--delay: .08s;">
+          <h3>Como esta pagina deve evoluir</h3>
+          <ul>
+            <li>Adicionar links live e GitHub para cada projeto publicado.</li>
+            <li>Incluir uma bio mais pessoal e orientada a vaga.</li>
+            <li>Acrescentar provas de estudo, certificacoes e stack principal.</li>
+            <li>Conectar todas as divulgacoes a este unico endereco.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container contact-box reveal" style="--delay: 0s;">
+        <p class="eyebrow">Contato</p>
+        <h2>Se esta pagina te levou ate aqui, o proximo passo e simples.</h2>
+        <p>Fale comigo pelo LinkedIn e acompanhe a evolucao dos projetos que estou colocando em producao ao longo desta semana.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="https://www.linkedin.com/in/roberto-luiz-0a2774110/" target="_blank" rel="noopener noreferrer">Conversar no LinkedIn</a>
+          <a class="button button-secondary" href="mailto:contato@exemplo.com">Atualizar e-mail depois</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Portfolio inicial de Roberto Luiz. Construido para evoluir com novos projetos e deploys.</p>
+    </div>
+  </footer>
+</body>
+</html>

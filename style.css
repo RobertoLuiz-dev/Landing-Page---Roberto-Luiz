@@ -189,6 +189,16 @@ h2 {
   height: 2.5rem;
 }
 
+.icon-portfolio {
+  width: 2.35rem;
+  height: 2.35rem;
+}
+
+.icon-home {
+  width: 3.4rem;
+  height: 3.4rem;
+}
+
 .nav a::after {
   content: "";
   position: absolute;
@@ -477,6 +487,92 @@ body.copy-notice-open {
   animation-delay: var(--delay, 0s);
 }
 
+.portfolio {
+  width: 100%;
+  padding: 2rem var(--edge-gap) 1.8rem;
+}
+
+.portfolio-shell {
+  border: 1px solid var(--line);
+  border-radius: 2.6rem;
+  padding: clamp(1.8rem, 2.6vw, 3rem);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(10px);
+}
+
+.portfolio-title {
+  font-size: clamp(3.1rem, 4vw, 4.6rem);
+  max-width: 16ch;
+}
+
+.portfolio-lead {
+  margin-top: 1.1rem;
+  color: var(--ink-soft);
+  max-width: 65ch;
+}
+
+.portfolio-grid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr));
+  gap: 1.2rem;
+}
+
+.portfolio-card {
+  border: 1px solid var(--line);
+  border-radius: 1.9rem;
+  overflow: hidden;
+  background: rgba(246, 250, 252, 0.86);
+  box-shadow: 0 12px 30px rgba(13, 41, 60, 0.12);
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 38px rgba(13, 41, 60, 0.18);
+}
+
+.project-thumb-wrap {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  background: linear-gradient(145deg, rgba(15, 110, 155, 0.18), rgba(15, 31, 44, 0.02));
+}
+
+.project-thumb {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.portfolio-card-body {
+  padding: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  flex: 1;
+}
+
+.portfolio-card-body h2 {
+  font-size: clamp(2.6rem, 2.6vw, 3.2rem);
+  line-height: 1;
+}
+
+.portfolio-card-body p {
+  color: var(--ink-soft);
+  font-size: 1.48rem;
+}
+
+.portfolio-card-body .button {
+  width: fit-content;
+  margin-top: auto;
+  margin-left: auto;
+}
+
 @keyframes reveal {
   to {
     opacity: 1;
@@ -634,6 +730,18 @@ body.copy-notice-open {
     gap: 1.4rem;
     flex-wrap: wrap;
     justify-content: flex-end;
+  }
+
+  .portfolio {
+    padding: 1.6rem var(--edge-gap);
+  }
+
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-card-body {
+    padding: 1.4rem;
   }
 
   .hero {

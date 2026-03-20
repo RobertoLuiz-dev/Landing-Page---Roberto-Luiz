@@ -3,53 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio de Roberto Luiz com projetos front-end, foco em interfaces responsivas e deploy no Vercel.">
+  <meta name="description" content="Projetos de Roberto Luiz publicados no Vercel, com acesso rapido as demos.">
   <meta name="theme-color" content="#111827">
-  <title>Roberto Luiz | Landing Page</title>
+  <title>Roberto Luiz | Projetos</title>
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="/assets/favicon.png">
-
-  <!-- Open Graph — Facebook · LinkedIn · WhatsApp · Discord -->
-  <meta property="og:type"        content="website">
-  <meta property="og:url"         content="https://landing-page-roberto-luiz.vercel.app/">
-  <meta property="og:title"       content="Roberto Luiz | Landing page pessoal para mostrar projetos front-end, processo de trabalho e contatos">
-  <meta property="og:description" content="Landing page pessoal com projetos, processo de trabalho e contatos.">
-  <meta property="og:image"       content="https://landing-page-roberto-luiz.vercel.app/assets/og-card.png">
-  <meta property="og:image:width"  content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:locale"      content="pt_BR">
-
-  <!-- Twitter / X Card -->
-  <meta name="twitter:card"        content="summary_large_image">
-  <meta name="twitter:title"       content="Roberto Luiz | Front-end Portfolio">
-  <meta name="twitter:description" content="Landing page pessoal com projetos, processo de trabalho e contatos.">
-  <meta name="twitter:image"       content="https://landing-page-roberto-luiz.vercel.app/assets/og-card.png">
-
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style.css">
 </head>
-
 <body>
   <div class="page-noise" aria-hidden="true"></div>
 
   <header class="site-header">
     <div class="container topbar">
-      <div class="brand" aria-label="Logo pessoal de Roberto Luiz">
-        <img class="brand-mark" src="/assets/favicon.png" alt="" aria-hidden="true">
+      <a class="brand" href="../index.html" aria-label="Voltar para a landing page">
+        <img class="brand-mark" src="../assets/favicon.png" alt="">
         <span>Roberto Luiz - Web developer</span>
-      </div>
-      
-      <nav class="nav">
-        <a href="pages/portfolio.html" aria-label="Abrir pagina de projetos">
-          <span>Projetos</span>
-          <svg class="nav-icon icon-portfolio" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-            <path fill="currentColor" d="M3 6a3 3 0 0 1 3-3h3a3 3 0 0 1 3 3v3a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V6zm11 0a3 3 0 0 1 3-3h3a3 3 0 0 1 3 3v3a3 3 0 0 1-3 3h-3a3 3 0 0 1-3-3V6zM3 17a3 3 0 0 1 3-3h3a3 3 0 0 1 3 3v3a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3v-3zm11 0a3 3 0 0 1 3-3h3a3 3 0 0 1 3 3v3a3 3 0 0 1-3 3h-3a3 3 0 0 1-3-3v-3z"/>
+      </a>
+
+      <nav class="nav" aria-label="Navegacao principal">
+        <a href="../index.html" aria-label="Abrir pagina inicial">
+          <span>Inicio</span>
+          <svg class="nav-icon icon-home" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path fill="currentColor" d="M12 3.2 2.6 11.4l1.3 1.5L5 12v8.3h5.8V15h2.4v5.3H19V12l1.1.9 1.3-1.5z"/>
           </svg>
         </a>
-       
         <a href="https://github.com/RobertoLuiz-dev" target="_blank" rel="noopener noreferrer">
           <span>GitHub</span>
           <svg class="nav-icon icon-github" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
@@ -79,29 +59,26 @@
   </header>
 
   <main>
-    <section class="hero" id="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy reveal" style="--delay: 0s;">
-          <p class="eyebrow">Soluções Web Modernas</p>
-          <div class="hero-copy-inner">
-            <h1>Transformando ideias e projetos próprios em páginas claras, responsivas e prontas para publicação.</h1>
-            <ul class="hero-metrics" aria-label="Destaques do portfolio">
-              <li><strong>Layout limpo</strong><span> Rápida identificação de quem você é e o que você entrega.</span></li>
-              <li><strong>Identidade visual</strong><span> Alusão clara à sua atividade.</span></li>
-              <li><strong>Estrutura pronta</strong><span> Evolução e escalabilidade.</span></li>
-            </ul>
-          </div>
-        </div>
+    <section class="portfolio" aria-labelledby="portfolio-title">
+      <div class="container portfolio-shell reveal" style="--delay: 0s;">
+        <p class="eyebrow">Portfolio Centralizado</p>
+        <h1 id="portfolio-title" class="portfolio-title">Projetos publicados</h1>
+        <p class="portfolio-lead">Aqui esta a vitrine dos projetos online. Cada card abre a respectiva demo em nova aba para nao interromper sua navegacao.</p>
 
-        <aside class="hero-panel reveal" style="--delay: .08s;">
-          <p class="panel-kicker">Resumo Estratégico</p>
-          <div class="panel-list panel-contact">
-            <a class="button button-primary">Responsividade</a>
-            <a class="button button-primary">Performance</a>
-            <a class="button button-primary">Resultados</a>
-          </div>
-          <h2>Dê ao seu negócio a perceção de valor técnico que ele deve ter. Faça o seu cliente perceber isso em poucos cliques!</h2>
-        </aside>
+        <div class="portfolio-grid" id="portfolio-grid" role="list" aria-label="Lista de projetos publicados"></div>
+
+        <template id="portfolio-card-template">
+          <article class="portfolio-card" role="listitem">
+            <figure class="project-thumb-wrap">
+              <img class="project-thumb" src="" alt="">
+            </figure>
+            <div class="portfolio-card-body">
+              <h2></h2>
+              <p></p>
+              <a class="button button-primary" href="#" target="_blank" rel="noopener noreferrer">Abrir Demo</a>
+            </div>
+          </article>
+        </template>
       </div>
     </section>
   </main>
@@ -199,6 +176,57 @@
         if (event.key === "Escape" && !notice.hidden) {
           hideNotice();
         }
+      });
+    })();
+  </script>
+
+  <script>
+    (function () {
+      var projects = [
+        {
+          title: "Calculadora de IMC",
+          description: "Calculadora de Índice de Massa Corporal que incorpora faixas clínicas e metas personalizadas.",
+          image: "../assets/IMC.jpg",
+          imageAlt: "Preview do projeto Calculadora de IMC",
+          demoUrl: "https://19-calculadora-de-imc.vercel.app/"
+        },
+        {
+          title: "Jogo da Memoria da Leticia",
+          description: "Interação leve para exercitar a atenção.",
+          image: "../assets/Jogo.da.memoria.jpg",
+          imageAlt: "Preview do projeto Jogo da Memoria da Leticia",
+          demoUrl: "https://jogo-da-mem-ria-da-let-cia.vercel.app/"
+        },
+        {
+          title: "Blog dos Gatos",
+          description: "Blog responsivo com leitura fluida e visual editorial.",
+          image: "../assets/blog.dos.gatos.jpg",
+          imageAlt: "Preview do projeto Cats Blog",
+          demoUrl: "https://cats-blog-delta.vercel.app/"
+        }
+      ];
+
+      var grid = document.getElementById("portfolio-grid");
+      var template = document.getElementById("portfolio-card-template");
+
+      if (!grid || !template) {
+        return;
+      }
+
+      projects.forEach(function (project) {
+        var fragment = template.content.cloneNode(true);
+        var image = fragment.querySelector(".project-thumb");
+        var title = fragment.querySelector("h2");
+        var description = fragment.querySelector("p");
+        var link = fragment.querySelector("a");
+
+        image.src = project.image;
+        image.alt = project.imageAlt;
+        title.textContent = project.title;
+        description.textContent = project.description;
+        link.href = project.demoUrl;
+
+        grid.appendChild(fragment);
       });
     })();
   </script>
